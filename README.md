@@ -5,7 +5,7 @@ JDK environment rapid governance tool
 # Get Started
 
 ## Install for linux or macOS
-
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/wyhhcj666/JERGT/main/install.sh)"
 
 # LICENSE
 
