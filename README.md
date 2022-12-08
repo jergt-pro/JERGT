@@ -5,7 +5,19 @@ JDK environment rapid governance tool
 # Get Started
 
 ## Install for linux or macOS
+```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/wyhhcj666/JERGT/main/install.sh)"
+```
+
+## Install for Windows (and Windows Server)
+
+```powershell
+
+```
+
+## Configuration
+
+- Temp Mirror: ``export JERGT_MIRROR="<Your Mirror Server URL>"``
 
 # LICENSE
 
