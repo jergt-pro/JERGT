@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 from libcore.exception.config_key_not_exist_exception import ConfigKeyNotExistException
 from libcore.until.string_util import StringUtil
-
+import platform, os
 
 class Config:
     """
