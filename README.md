@@ -6,7 +6,7 @@ JDK environment rapid governance tool
 
 ## Install for linux or macOS
 ```shell
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/wyhhcj666/JERGT/main/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/jergt-pro/JERGT/main/install.sh)"
 ```
 
 ## Install for Windows (and Windows Server)
