@@ -18,6 +18,7 @@ class Config:
     配置
     """
 
+
     __default_publisher_value = (
         'oracle',
         'aws'
@@ -121,8 +122,6 @@ class Config:
             self.__path = self.__config_file_windows
             return self.__path
 
-        # TODO 通过操作系统路径加载 .jergt-config.ini
-
         filename = self.__path
 
         if os.path.exists(filename):
@@ -143,6 +142,7 @@ class Config:
     def get(self, key: str) -> str:
         """
         获取配置项
+        配置获取优先级： 当前环境变量 > 配置文件 > 默认值
         :param key: Key
         :return: Value
         """
@@ -208,11 +208,13 @@ class Config:
     def get_with_default(self, key: str, default: str):
         """
         获取配置项，如果这个配置项的值为空，那么返回 default
+        配置获取优先级: 当前环境变量 > 配置文件 > 指定的默认值 > 默认值
         :param key:Key
         :return: Value
         :param default: 默认值
         :return: Value
         """
+
         self.__val = self.__config.get("app", key).strip()
         if self.__val is None:
             return default == self.__match_config_key
