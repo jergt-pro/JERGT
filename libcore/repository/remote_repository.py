@@ -14,7 +14,8 @@ class RemoteRepository:
         self.__indexer = indexer
 
     def get_file_by_app(self, app: App):  # 通过App这个元数据，获取文件实体的路径
-            return app.get_file()         # github的下载地址
+        return app.get_file()  # github的下载地址
+
 
 
 if __name__ == "__main__":

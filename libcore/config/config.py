@@ -12,7 +12,7 @@ from libcore.exception.get_system_info_exception import GetSystemInfoException
 from libcore.exception.config_file_parse_failed_exception import ConfigFileParseFailedException
 from libcore.exception.key_value_not_in_range import KeyValueNotInRange
 
-
+@staticmethod
 class Config:
     """
     配置
@@ -222,3 +222,5 @@ class Config:
 
 if __name__ == "__main__":
     pass
+
+
