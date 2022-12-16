@@ -33,8 +33,8 @@ from libcore.cache.cache import Cache
 
 def haha():
     get_p = App()
-    get_p.set_version(publisher="oracle")
-    print(get_p.get_version())
+    get_p.set_publisher()
+    get_p.get_publisher()
 
 
 if __name__ == '__main__':
