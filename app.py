@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from libcore.config.config import Config
+# from libcore.config.config import Config
 from libcore.repository.index import Index, App
-from libcore.repository.local_repository import LocalRepository
-from libcore.repository.remote_repository import RemoteRepository
-from libcore.exception.not_support_repository_indexer_exception import NotSupportRepositoryIndexerException
-from libcore.exception.indexer_init_failed_exception import IndexerInitFailedException
-from libcore.cache.cache import Cache
+# from libcore.repository.local_repository import LocalRepository
+# from libcore.repository.remote_repository import RemoteRepository
+# from libcore.exception.not_support_repository_indexer_exception import NotSupportRepositoryIndexerException
+# from libcore.exception.indexer_init_failed_exception import IndexerInitFailedException
+# from libcore.cache.cache import Cache
 
 
 # def jergt():
@@ -32,10 +32,13 @@ from libcore.cache.cache import Cache
 #         print("Auto Task: {} cache files are cleared".format(auto_remove_num))
 
 def haha():
-    get_p = App()
-    get_p.set_publisher()
-    get_p.get_publisher()
+    xixi = App()
+    xixi.set_file("jdk-oracle-17.0.5-20221214-225037.zip")
+    xixi.get_file()
+    xixi.set_version("17.0.5")
+    xixi.get_version()
+
 
 
 if __name__ == '__main__':
-    pass
+    haha()

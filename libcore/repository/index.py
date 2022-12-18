@@ -56,6 +56,8 @@ class App:
     #         print(e)
 
     def get_version(self) -> str:
+        # version = "version:{}".format(self.__version)
+        # print(version)
         return self.__version
 
     def set_version(self, version: str):
@@ -125,6 +127,8 @@ class App:
             if StringUtil.is_empty(filename):
                 return None
             self.__file = file  # 如果没有填入filename那就使用之前输入的publisher和version
+            # TODO 获取到多条file【下载jdk路径后再进行下载方式的判断】
+
         else:
             listfile = file.split("-", 3)
             publisher1 = listfile[1:2]
@@ -154,6 +158,7 @@ class App:
             if StringUtil.is_empty(filename):
                 return None
             self.__file = file
+            # TODO 获取到多条file【下载jdk路径后再进行下载方式的判断】
 
     def __init__(self):
         self.__index_json = None

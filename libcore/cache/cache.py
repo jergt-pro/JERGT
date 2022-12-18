@@ -23,13 +23,14 @@ class Cache:
 
     __fileid = "jdk-{version}-{publisher}"
     __cache_name_tpl = "{fileid}-{year}-{month}-{day}{file_ext}"
+    __config = None
 
     def __init__(self):
-        self.Config = None
+        self.__Config = None
 
     @staticmethod
     def init__system_type(self):
-        system_type = self.Config.__init_system_info()
+        system_type = self.__Config.__init_system_info()
         if system_type == "Linux":
             self.cache_default_path = self.__cache_linux_path_tpl
             cache_default_path = self.cache_default_path.strip()
